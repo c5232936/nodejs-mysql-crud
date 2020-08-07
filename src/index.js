@@ -32,6 +32,6 @@ app.use('/', customerRoutes);
 app.use(express.static(path.join(__dirname, 'public')));
 
 // starting the server
-app.listen(app.get('port'), () => {
+app.listen(app.get('port'), '0.0.0.0' , () => {
     console.log(`server on port ${app.get('port')}`);
 });
